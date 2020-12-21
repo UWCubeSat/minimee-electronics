@@ -13,47 +13,47 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1200 2000 2    50   Input ~ 0
+Text GLabel 1700 2000 2    50   Input ~ 0
 sda
-Text GLabel 1200 1900 2    50   Input ~ 0
+Text GLabel 1700 1900 2    50   Input ~ 0
 scl
 $Comp
 L power:GND #PWR0101
 U 1 1 5EF5BC77
-P 1450 1600
-F 0 "#PWR0101" H 1450 1350 50  0001 C CNN
-F 1 "GND" H 1455 1427 50  0000 C CNN
-F 2 "" H 1450 1600 50  0001 C CNN
-F 3 "" H 1450 1600 50  0001 C CNN
-	1    1450 1600
+P 1950 1600
+F 0 "#PWR0101" H 1950 1350 50  0001 C CNN
+F 1 "GND" H 1955 1427 50  0000 C CNN
+F 2 "" H 1950 1600 50  0001 C CNN
+F 3 "" H 1950 1600 50  0001 C CNN
+	1    1950 1600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR0102
 U 1 1 5EF5C192
-P 1700 1700
-F 0 "#PWR0102" H 1700 1550 50  0001 C CNN
-F 1 "+5V" H 1715 1873 50  0000 C CNN
-F 2 "" H 1700 1700 50  0001 C CNN
-F 3 "" H 1700 1700 50  0001 C CNN
-	1    1700 1700
+P 2200 1700
+F 0 "#PWR0102" H 2200 1550 50  0001 C CNN
+F 1 "+5V" H 2215 1873 50  0000 C CNN
+F 2 "" H 2200 1700 50  0001 C CNN
+F 3 "" H 2200 1700 50  0001 C CNN
+	1    2200 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 1800 1750 1800
+	1700 1800 2250 1800
 $Comp
 L power:+12V #PWR0103
 U 1 1 5EF5D265
-P 2250 1800
-F 0 "#PWR0103" H 2250 1650 50  0001 C CNN
-F 1 "+12V" H 2265 1973 50  0000 C CNN
-F 2 "" H 2250 1800 50  0001 C CNN
-F 3 "" H 2250 1800 50  0001 C CNN
-	1    2250 1800
+P 2750 1800
+F 0 "#PWR0103" H 2750 1650 50  0001 C CNN
+F 1 "+12V" H 2765 1973 50  0000 C CNN
+F 2 "" H 2750 1800 50  0001 C CNN
+F 3 "" H 2750 1800 50  0001 C CNN
+	1    2750 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 1700 1200 1700
+	2200 1700 1700 1700
 $Comp
 L power:+5V #PWR0104
 U 1 1 5EF6157D
@@ -236,7 +236,7 @@ U 1 1 5F08513F
 P 1000 5300
 F 0 "JTEMP1" H 918 5517 50  0000 C CNN
 F 1 "Conn_01x02" H 918 5426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1000 5300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1000 5300 50  0001 C CNN
 F 3 "~" H 1000 5300 50  0001 C CNN
 	1    1000 5300
 	-1   0    0    -1  
@@ -252,21 +252,21 @@ IO Expander
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J1
 U 1 1 5F24C18E
-P 900 1800
-F 0 "J1" H 950 1375 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 950 1466 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 900 1800 50  0001 C CNN
-F 3 "~" H 900 1800 50  0001 C CNN
-	1    900  1800
+P 1400 1800
+F 0 "J1" H 1450 1375 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 1450 1466 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1400 1800 50  0001 C CNN
+F 3 "~" H 1400 1800 50  0001 C CNN
+	1    1400 1800
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J3
+L Connector_Generic:Conn_01x02 JSOL1
 U 1 1 5F24DD15
 P 5400 1450
-F 0 "J3" H 5318 1667 50  0000 C CNN
+F 0 "JSOL1" H 5318 1667 50  0000 C CNN
 F 1 "Conn_01x02" H 5318 1576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5400 1450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5400 1450 50  0001 C CNN
 F 3 "~" H 5400 1450 50  0001 C CNN
 	1    5400 1450
 	-1   0    0    -1  
@@ -367,29 +367,29 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F25BD74
-P 1750 1800
-F 0 "#FLG0101" H 1750 1875 50  0001 C CNN
-F 1 "PWR_FLAG" H 1750 1973 50  0000 C CNN
-F 2 "" H 1750 1800 50  0001 C CNN
-F 3 "~" H 1750 1800 50  0001 C CNN
-	1    1750 1800
+P 2250 1800
+F 0 "#FLG0101" H 2250 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 2250 1973 50  0000 C CNN
+F 2 "" H 2250 1800 50  0001 C CNN
+F 3 "~" H 2250 1800 50  0001 C CNN
+	1    2250 1800
 	-1   0    0    1   
 $EndComp
-Connection ~ 1750 1800
+Connection ~ 2250 1800
 Wire Wire Line
-	1750 1800 2250 1800
+	2250 1800 2750 1800
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5F25CD1F
-P 1700 1700
-F 0 "#FLG0102" H 1700 1775 50  0001 C CNN
-F 1 "PWR_FLAG" V 1700 1828 50  0000 L CNN
-F 2 "" H 1700 1700 50  0001 C CNN
-F 3 "~" H 1700 1700 50  0001 C CNN
-	1    1700 1700
+P 2200 1700
+F 0 "#FLG0102" H 2200 1775 50  0001 C CNN
+F 1 "PWR_FLAG" V 2200 1828 50  0000 L CNN
+F 2 "" H 2200 1700 50  0001 C CNN
+F 3 "~" H 2200 1700 50  0001 C CNN
+	1    2200 1700
 	0    1    1    0   
 $EndComp
-Connection ~ 1700 1700
+Connection ~ 2200 1700
 $Comp
 L power:+5V #PWR0116
 U 1 1 5F266259
@@ -443,12 +443,12 @@ F 3 "" H 7700 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J4
+L Connector_Generic:Conn_01x02 JSOL2
 U 1 1 5F266275
 P 6850 1500
-F 0 "J4" H 6768 1717 50  0000 C CNN
+F 0 "JSOL2" H 6768 1717 50  0000 C CNN
 F 1 "Conn_01x02" H 6768 1626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6850 1500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 6850 1500 50  0001 C CNN
 F 3 "~" H 6850 1500 50  0001 C CNN
 	1    6850 1500
 	-1   0    0    -1  
@@ -548,12 +548,12 @@ F 3 "" H 9050 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J5
+L Connector_Generic:Conn_01x02 JSOL3
 U 1 1 5F2698C2
 P 8200 1500
-F 0 "J5" H 8118 1717 50  0000 C CNN
+F 0 "JSOL3" H 8118 1717 50  0000 C CNN
 F 1 "Conn_01x02" H 8118 1626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8200 1500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 8200 1500 50  0001 C CNN
 F 3 "~" H 8200 1500 50  0001 C CNN
 	1    8200 1500
 	-1   0    0    -1  
@@ -653,12 +653,12 @@ F 3 "" H 10400 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J6
+L Connector_Generic:Conn_01x02 JSOL4
 U 1 1 5F26C725
 P 9550 1500
-F 0 "J6" H 9468 1717 50  0000 C CNN
+F 0 "JSOL4" H 9468 1717 50  0000 C CNN
 F 1 "Conn_01x02" H 9468 1626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 1500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 9550 1500 50  0001 C CNN
 F 3 "~" H 9550 1500 50  0001 C CNN
 	1    9550 1500
 	-1   0    0    -1  
@@ -792,11 +792,7 @@ Wire Wire Line
 	2800 6650 3650 6650
 Wire Wire Line
 	2800 6950 3650 6950
-NoConn ~ 700  1600
-NoConn ~ 700  1700
-NoConn ~ 700  1800
-NoConn ~ 700  1900
-NoConn ~ 700  2000
+NoConn ~ 1200 1600
 Wire Wire Line
 	5900 1350 6250 1350
 $Comp
@@ -838,19 +834,19 @@ F 3 "" H 6250 1950 50  0001 C CNN
 $EndComp
 Connection ~ 6250 1950
 Wire Wire Line
-	1200 1600 1450 1600
+	1700 1600 1950 1600
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5F26091E
-P 1450 1600
-F 0 "#FLG0103" H 1450 1675 50  0001 C CNN
-F 1 "PWR_FLAG" H 1450 1773 50  0000 C CNN
-F 2 "" H 1450 1600 50  0001 C CNN
-F 3 "~" H 1450 1600 50  0001 C CNN
-	1    1450 1600
+P 1950 1600
+F 0 "#FLG0103" H 1950 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 1773 50  0000 C CNN
+F 2 "" H 1950 1600 50  0001 C CNN
+F 3 "~" H 1950 1600 50  0001 C CNN
+	1    1950 1600
 	1    0    0    -1  
 $EndComp
-Connection ~ 1450 1600
+Connection ~ 1950 1600
 $Comp
 L Device:R R6
 U 1 1 5F867E39
@@ -971,4 +967,132 @@ F 4 "C508197" H 7250 1200 50  0001 C CNN "LCSC"
 	1    7250 1200
 	1    0    0    1   
 $EndComp
+$Comp
+L Isolator:SFH617A-1 U3
+U 1 1 5FE18190
+P 4950 3400
+F 0 "U3" H 4950 3725 50  0000 C CNN
+F 1 "SFH617A-1" H 4950 3634 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4750 3200 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 4950 3400 50  0001 L CNN
+	1    4950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5FE1CF05
+P 4500 3600
+F 0 "#PWR0127" H 4500 3350 50  0001 C CNN
+F 1 "GND" H 4505 3427 50  0000 C CNN
+F 2 "" H 4500 3600 50  0001 C CNN
+F 3 "" H 4500 3600 50  0001 C CNN
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3600 4500 3500
+Wire Wire Line
+	4500 3500 4650 3500
+Text Label 8100 3400 2    50   ~ 0
+p0
+Text Label 1200 1900 2    50   ~ 0
+experiment+
+Text Label 1200 2000 2    50   ~ 0
+experiment-
+Text Label 1200 1700 2    50   ~ 0
+HV+
+Text Label 1200 1800 2    50   ~ 0
+HV-
+$Comp
+L Connector_Generic:Conn_01x02 JPUMP1
+U 1 1 5FE2670E
+P 5650 3200
+F 0 "JPUMP1" H 5730 3192 50  0000 L CNN
+F 1 "Conn_01x02" H 5730 3101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5650 3200 50  0001 C CNN
+F 3 "~" H 5650 3200 50  0001 C CNN
+	1    5650 3200
+	1    0    0    -1  
+$EndComp
+Text Label 5450 3200 2    50   ~ 0
+HV+
+Wire Wire Line
+	5250 3300 5450 3300
+Text Label 5250 3500 0    50   ~ 0
+HV-
+$Comp
+L Isolator:SFH617A-1 U4
+U 1 1 5FE2F03C
+P 4950 4250
+F 0 "U4" H 4950 4575 50  0000 C CNN
+F 1 "SFH617A-1" H 4950 4484 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4750 4050 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 4950 4250 50  0001 L CNN
+	1    4950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5FE2F042
+P 4500 4450
+F 0 "#PWR0128" H 4500 4200 50  0001 C CNN
+F 1 "GND" H 4505 4277 50  0000 C CNN
+F 2 "" H 4500 4450 50  0001 C CNN
+F 3 "" H 4500 4450 50  0001 C CNN
+	1    4500 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4450 4500 4350
+Wire Wire Line
+	4500 4350 4650 4350
+Text Label 8100 3300 2    50   ~ 0
+p1
+$Comp
+L Connector_Generic:Conn_01x02 JPUMP2
+U 1 1 5FE2F04B
+P 5650 4050
+F 0 "JPUMP2" H 5730 4042 50  0000 L CNN
+F 1 "Conn_01x02" H 5730 3951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5650 4050 50  0001 C CNN
+F 3 "~" H 5650 4050 50  0001 C CNN
+	1    5650 4050
+	1    0    0    -1  
+$EndComp
+Text Label 5450 4050 2    50   ~ 0
+HV+
+Wire Wire Line
+	5250 4150 5450 4150
+Text Label 5250 4350 0    50   ~ 0
+HV-
+$Comp
+L Connector_Generic:Conn_01x02 JFLUID1
+U 1 1 5FE34B2D
+P 8300 3300
+F 0 "JFLUID1" H 8380 3292 50  0000 L CNN
+F 1 "Conn_01x02" H 8380 3201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 8300 3300 50  0001 C CNN
+F 3 "~" H 8300 3300 50  0001 C CNN
+	1    8300 3300
+	1    0    0    -1  
+$EndComp
+Text Label 4650 3300 2    50   ~ 0
+p2
+Text Label 4650 4150 2    50   ~ 0
+p3
+$Comp
+L Connector_Generic:Conn_01x02 JEXP1
+U 1 1 5FE7C3B5
+P 8300 3950
+F 0 "JEXP1" H 8380 3942 50  0000 L CNN
+F 1 "Conn_01x02" H 8380 3851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 8300 3950 50  0001 C CNN
+F 3 "~" H 8300 3950 50  0001 C CNN
+	1    8300 3950
+	1    0    0    -1  
+$EndComp
+Text Label 8100 4050 2    50   ~ 0
+experiment+
+Text Label 8100 3950 2    50   ~ 0
+experiment-
 $EndSCHEMATC
