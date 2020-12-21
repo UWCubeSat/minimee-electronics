@@ -993,7 +993,7 @@ Wire Wire Line
 	4500 3600 4500 3500
 Wire Wire Line
 	4500 3500 4650 3500
-Text Label 8100 3400 2    50   ~ 0
+Text Label 8550 2600 2    50   ~ 0
 p0
 Text Label 1200 1900 2    50   ~ 0
 experiment+
@@ -1046,7 +1046,7 @@ Wire Wire Line
 	4500 4450 4500 4350
 Wire Wire Line
 	4500 4350 4650 4350
-Text Label 8100 3300 2    50   ~ 0
+Text Label 8550 3250 2    50   ~ 0
 p1
 $Comp
 L Connector_Generic:Conn_01x02 JPUMP2
@@ -1065,17 +1065,6 @@ Wire Wire Line
 	5250 4150 5450 4150
 Text Label 5250 4350 0    50   ~ 0
 HV-
-$Comp
-L Connector_Generic:Conn_01x02 JFLUID1
-U 1 1 5FE34B2D
-P 8300 3300
-F 0 "JFLUID1" H 8380 3292 50  0000 L CNN
-F 1 "Conn_01x02" H 8380 3201 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 8300 3300 50  0001 C CNN
-F 3 "~" H 8300 3300 50  0001 C CNN
-	1    8300 3300
-	1    0    0    -1  
-$EndComp
 Text Label 4650 3300 2    50   ~ 0
 p2
 Text Label 4650 4150 2    50   ~ 0
@@ -1095,4 +1084,78 @@ Text Label 8100 4050 2    50   ~ 0
 experiment+
 Text Label 8100 3950 2    50   ~ 0
 experiment-
+$Comp
+L Connector_Generic:Conn_01x03 JFLUID2
+U 1 1 5FECF68D
+P 8750 3350
+F 0 "JFLUID2" H 8830 3392 50  0000 L CNN
+F 1 "Conn_01x03" H 8830 3301 50  0000 L CNN
+F 2 "" H 8750 3350 50  0001 C CNN
+F 3 "~" H 8750 3350 50  0001 C CNN
+	1    8750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 JFLUID1
+U 1 1 5FED0BBF
+P 8750 2700
+F 0 "JFLUID1" H 8830 2742 50  0000 L CNN
+F 1 "Conn_01x03" H 8830 2651 50  0000 L CNN
+F 2 "" H 8750 2700 50  0001 C CNN
+F 3 "~" H 8750 2700 50  0001 C CNN
+	1    8750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FED5DAE
+P 8250 2650
+F 0 "#PWR?" H 8250 2500 50  0001 C CNN
+F 1 "+5V" H 8265 2823 50  0000 C CNN
+F 2 "" H 8250 2650 50  0001 C CNN
+F 3 "" H 8250 2650 50  0001 C CNN
+	1    8250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FED5FD2
+P 8200 3250
+F 0 "#PWR?" H 8200 3100 50  0001 C CNN
+F 1 "+5V" H 8215 3423 50  0000 C CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3250 8200 3350
+Wire Wire Line
+	8200 3350 8550 3350
+Wire Wire Line
+	8250 2650 8250 2700
+Wire Wire Line
+	8250 2700 8550 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5FEDAF9D
+P 8550 2800
+F 0 "#PWR?" H 8550 2550 50  0001 C CNN
+F 1 "GND" H 8555 2627 50  0000 C CNN
+F 2 "" H 8550 2800 50  0001 C CNN
+F 3 "" H 8550 2800 50  0001 C CNN
+	1    8550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FEDBEE4
+P 8550 3450
+F 0 "#PWR?" H 8550 3200 50  0001 C CNN
+F 1 "GND" H 8555 3277 50  0000 C CNN
+F 2 "" H 8550 3450 50  0001 C CNN
+F 3 "" H 8550 3450 50  0001 C CNN
+	1    8550 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
