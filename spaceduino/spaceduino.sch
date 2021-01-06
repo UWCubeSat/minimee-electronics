@@ -391,22 +391,8 @@ F 3 "" H 7100 950 50  0001 C CNN
 	1    7100 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Micro_SD_Card_Det MICROSD1
-U 1 1 5EFE706C
-P 9600 1650
-F 0 "MICROSD1" H 9550 2467 50  0000 C CNN
-F 1 "Micro_SD_Card_Det" H 9550 2376 50  0000 C CNN
-F 2 "Spaceduino:HRS_DM3CS-SF" H 11650 2350 50  0001 C CNN
-F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 9600 1750 50  0001 C CNN
-F 4 "C202111" H 9600 1650 50  0001 C CNN "LCSC"
-	1    9600 1650
-	1    0    0    -1  
-$EndComp
 NoConn ~ 8700 1250
 NoConn ~ 8700 1950
-NoConn ~ 8700 2050
-NoConn ~ 8700 2150
 $Comp
 L power:GND #PWR013
 U 1 1 5EFEE1A1
@@ -444,21 +430,6 @@ Wire Wire Line
 	8100 1750 7600 1750
 Text Notes 7800 1300 0    50   ~ 0
 The Great Corn Maze
-Wire Wire Line
-	10400 2150 10500 2150
-Wire Wire Line
-	10500 2150 10500 2250
-$Comp
-L power:GND #PWR019
-U 1 1 5EFF3B2C
-P 10500 2250
-F 0 "#PWR019" H 10500 2000 50  0001 C CNN
-F 1 "GND" H 10505 2077 50  0000 C CNN
-F 2 "" H 10500 2250 50  0001 C CNN
-F 3 "" H 10500 2250 50  0001 C CNN
-	1    10500 2250
-	1    0    0    -1  
-$EndComp
 Text GLabel 6800 1350 0    50   Input ~ 0
 6_spi_miso
 Text GLabel 6800 1550 0    50   Input ~ 0
@@ -528,7 +499,7 @@ a1
 Text GLabel 6300 3350 2    50   Input ~ 0
 a2
 Text GLabel 6300 3450 2    50   Input ~ 0
-a3
+a3_pump_en
 Text GLabel 6300 3550 2    50   Input ~ 0
 a4
 Text GLabel 6300 3650 2    50   Input ~ 0
@@ -1845,11 +1816,6 @@ F 3 "~" H 8300 4850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 8300 4850
-NoConn ~ 10050 3350
-NoConn ~ 10050 3450
-NoConn ~ 10050 3550
-NoConn ~ 10050 3650
-NoConn ~ 10050 3750
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 5F1BDC96
@@ -2299,4 +2265,59 @@ F 4 "C264549" H 1700 5850 50  0001 C CNN "LCSC"
 $EndComp
 Text Notes 1550 6050 1    39   ~ 0
 both blue/white, or zener & led
+Text GLabel 10050 3450 2    50   Input ~ 0
+HV+
+Text GLabel 10050 3550 2    50   Input ~ 0
+HV-
+$Comp
+L power:GND #PWR0115
+U 1 1 6001E502
+P 10050 3750
+F 0 "#PWR0115" H 10050 3500 50  0001 C CNN
+F 1 "GND" H 10055 3577 50  0000 C CNN
+F 2 "" H 10050 3750 50  0001 C CNN
+F 3 "" H 10050 3750 50  0001 C CNN
+	1    10050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 6001F344
+P 10050 3350
+F 0 "#PWR0116" H 10050 3100 50  0001 C CNN
+F 1 "GND" V 10055 3222 50  0000 R CNN
+F 2 "" H 10050 3350 50  0001 C CNN
+F 3 "" H 10050 3350 50  0001 C CNN
+	1    10050 3350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10050 3650 2    50   Input ~ 0
+experiment
+$Comp
+L power:GND #PWR019
+U 1 1 5EFF3B2C
+P 10500 2250
+F 0 "#PWR019" H 10500 2000 50  0001 C CNN
+F 1 "GND" H 10505 2077 50  0000 C CNN
+F 2 "" H 10500 2250 50  0001 C CNN
+F 3 "" H 10500 2250 50  0001 C CNN
+	1    10500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2150 10500 2250
+Wire Wire Line
+	10400 2150 10500 2150
+$Comp
+L Connector:Micro_SD_Card MICROSD1
+U 1 1 5EFE706C
+P 9600 1550
+F 0 "MICROSD1" H 9550 2367 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 9550 2276 50  0000 C CNN
+F 2 "Spaceduino:Connfly DS1139-06 MicroSD" H 11650 2250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/CONNFLY-Elec-DS1139-06-08SS4BSR_C86574.pdf" H 9600 1650 50  0001 C CNN
+F 4 "C86574" H 9600 1550 50  0001 C CNN "LCSC"
+	1    9600 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

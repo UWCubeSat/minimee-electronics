@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name Spaceduino_Parts)(type Legacy)(uri ${KIPRJMOD}/spaceduino.lib)(options "")(descr ""))
 )
