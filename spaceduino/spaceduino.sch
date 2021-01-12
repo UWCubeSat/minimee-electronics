@@ -1584,6 +1584,7 @@ F 0 "U7" H 8900 6350 50  0000 C CNN
 F 1 "INA226" H 8900 6250 50  0000 C CNN
 F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 9450 5250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 9000 5600 50  0001 C CNN
+F 4 "C49851" H 8650 5700 50  0001 C CNN "LCSC"
 	1    8650 5700
 	1    0    0    -1  
 $EndComp
@@ -1656,6 +1657,7 @@ F 0 "U5" H 3850 4700 50  0000 C CNN
 F 1 "INA226" H 3850 4600 50  0000 C CNN
 F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 4350 3600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 3900 3950 50  0001 C CNN
+F 4 "C49851" H 3550 4050 50  0001 C CNN "LCSC"
 	1    3550 4050
 	1    0    0    -1  
 $EndComp

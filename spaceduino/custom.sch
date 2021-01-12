@@ -67,7 +67,7 @@ F 0 "Q4" H 4341 3804 50  0000 L CNN
 F 1 "BC856BS" H 4341 3895 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4350 3950 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BC856BS.pdf" H 4150 3850 50  0001 C CNN
-F 4 "C456122" H 4150 3850 50  0001 C CNN "LCSC"
+F 4 "C105896" H 4150 3850 50  0001 C CNN "LCSC"
 	1    4150 3850
 	-1   0    0    1   
 $EndComp
@@ -79,7 +79,7 @@ F 0 "Q4" H 5040 3804 50  0000 L CNN
 F 1 "BC856BS" H 5040 3895 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5050 3950 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BC856BS.pdf" H 4850 3850 50  0001 C CNN
-F 4 "C456122" H 4850 3850 50  0001 C CNN "LCSC"
+F 4 "C105896" H 4850 3850 50  0001 C CNN "LCSC"
 	2    4850 3850
 	1    0    0    1   
 $EndComp
@@ -91,6 +91,7 @@ F 0 "U9" H 5800 3450 50  0000 C CNN
 F 1 "INA226" H 5800 3350 50  0000 C CNN
 F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 6850 2350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 6400 2700 50  0001 C CNN
+F 4 "C49851" H 6050 2800 50  0001 C CNN "LCSC"
 	1    6050 2800
 	1    0    0    -1  
 $EndComp
@@ -276,6 +277,7 @@ F 0 "Q5" H 4154 3046 50  0000 L CNN
 F 1 "BSS84" H 4154 2955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 2925 50  0001 L CIN
 F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 3950 3000 50  0001 L CNN
+F 4 "C508197" H 3950 3000 50  0001 C CNN "LCSC"
 	1    3950 3000
 	1    0    0    -1  
 $EndComp
