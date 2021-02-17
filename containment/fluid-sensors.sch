@@ -1,0 +1,634 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 602E59B9
+P 5050 1200
+F 0 "J?" H 5130 1192 50  0000 L CNN
+F 1 "Conn_01x04" H 5130 1101 50  0000 L CNN
+F 2 "" H 5050 1200 50  0001 C CNN
+F 3 "~" H 5050 1200 50  0001 C CNN
+	1    5050 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_DAC:DAC081C081CIMK U?
+U 1 1 602EACAA
+P 1800 1600
+F 0 "U?" H 2250 2000 50  0000 L CNN
+F 1 "LM339" H 2000 1900 50  0000 L CNN
+F 2 "" H 2450 1350 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 1800 1600 50  0001 C CNN
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602ECD2A
+P 1800 1900
+F 0 "#PWR?" H 1800 1650 50  0001 C CNN
+F 1 "GND" H 1805 1727 50  0000 C CNN
+F 2 "" H 1800 1900 50  0001 C CNN
+F 3 "" H 1800 1900 50  0001 C CNN
+	1    1800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 602ED348
+P 1800 1300
+F 0 "#PWR?" H 1800 1150 50  0001 C CNN
+F 1 "+5V" H 1815 1473 50  0000 C CNN
+F 2 "" H 1800 1300 50  0001 C CNN
+F 3 "" H 1800 1300 50  0001 C CNN
+	1    1800 1300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1400 1700
+Text GLabel 1400 1500 0    50   Input ~ 0
+scl
+Text GLabel 1400 1600 0    50   Input ~ 0
+sda
+$Comp
+L Transistor_BJT:BC846 Q?
+U 1 1 602F054D
+P 3800 1700
+F 0 "Q?" H 3991 1746 50  0000 L CNN
+F 1 "BC846" H 3991 1655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4000 1625 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 3800 1700 50  0001 L CNN
+	1    3800 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1100 4200 1100
+Wire Wire Line
+	4200 1100 4200 900 
+$Comp
+L power:+5V #PWR?
+U 1 1 602F2866
+P 4200 900
+F 0 "#PWR?" H 4200 750 50  0001 C CNN
+F 1 "+5V" H 4215 1073 50  0000 C CNN
+F 2 "" H 4200 900 50  0001 C CNN
+F 3 "" H 4200 900 50  0001 C CNN
+	1    4200 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1500 3900 1200
+Wire Wire Line
+	3900 1200 4850 1200
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 602F5CB0
+P 3200 1700
+F 0 "U?" H 3200 2067 50  0000 C CNN
+F 1 "LM339" H 3200 1976 50  0000 C CNN
+F 2 "" H 3200 1700 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 3200 1700 50  0001 C CNN
+	1    3200 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1600 2900 1600
+Wire Wire Line
+	3500 1700 3600 1700
+Wire Wire Line
+	2900 1800 2700 1800
+Wire Wire Line
+	2700 1800 2700 2050
+Wire Wire Line
+	2700 2050 3900 2050
+Wire Wire Line
+	3900 2050 3900 1900
+$Comp
+L Device:R R?
+U 1 1 602FC671
+P 3900 2350
+F 0 "R?" H 3970 2396 50  0000 L CNN
+F 1 "R" H 3970 2305 50  0000 L CNN
+F 2 "" V 3830 2350 50  0001 C CNN
+F 3 "~" H 3900 2350 50  0001 C CNN
+	1    3900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2200 3900 2050
+Connection ~ 3900 2050
+Wire Wire Line
+	3900 2500 3900 2600
+$Comp
+L power:GND #PWR?
+U 1 1 602FD09C
+P 3900 2600
+F 0 "#PWR?" H 3900 2350 50  0001 C CNN
+F 1 "GND" H 3905 2427 50  0000 C CNN
+F 2 "" H 3900 2600 50  0001 C CNN
+F 3 "" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1400 4850 1600
+$Comp
+L power:GND #PWR?
+U 1 1 602FF3C3
+P 4850 1600
+F 0 "#PWR?" H 4850 1350 50  0001 C CNN
+F 1 "GND" H 4855 1427 50  0000 C CNN
+F 2 "" H 4850 1600 50  0001 C CNN
+F 3 "" H 4850 1600 50  0001 C CNN
+	1    4850 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1300 4600 1300
+Wire Wire Line
+	4600 1300 4600 2250
+$Comp
+L power:+5V #PWR?
+U 1 1 60300B97
+P 5450 1750
+F 0 "#PWR?" H 5450 1600 50  0001 C CNN
+F 1 "+5V" H 5465 1923 50  0000 C CNN
+F 2 "" H 5450 1750 50  0001 C CNN
+F 3 "" H 5450 1750 50  0001 C CNN
+	1    5450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60301189
+P 5450 2050
+F 0 "R?" H 5520 2096 50  0000 L CNN
+F 1 "R" H 5520 2005 50  0000 L CNN
+F 2 "" V 5380 2050 50  0001 C CNN
+F 3 "~" H 5450 2050 50  0001 C CNN
+	1    5450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60301595
+P 5450 2600
+F 0 "R?" H 5520 2646 50  0000 L CNN
+F 1 "R" H 5520 2555 50  0000 L CNN
+F 2 "" V 5380 2600 50  0001 C CNN
+F 3 "~" H 5450 2600 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603018B3
+P 5450 3150
+F 0 "R?" H 5520 3196 50  0000 L CNN
+F 1 "R" H 5520 3105 50  0000 L CNN
+F 2 "" V 5380 3150 50  0001 C CNN
+F 3 "~" H 5450 3150 50  0001 C CNN
+	1    5450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1900 5450 1750
+Wire Wire Line
+	5450 2200 5450 2450
+Wire Wire Line
+	5450 2750 5450 2800
+Wire Wire Line
+	5450 3300 5450 3450
+$Comp
+L power:GND #PWR?
+U 1 1 60302D41
+P 5450 3450
+F 0 "#PWR?" H 5450 3200 50  0001 C CNN
+F 1 "GND" H 5455 3277 50  0000 C CNN
+F 2 "" H 5450 3450 50  0001 C CNN
+F 3 "" H 5450 3450 50  0001 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2450 5450 2450
+Connection ~ 5450 2450
+Wire Wire Line
+	5900 2250 4600 2250
+Connection ~ 4600 2250
+$Comp
+L Comparator:LM339 U?
+U 1 1 60306E4E
+P 6200 2350
+F 0 "U?" H 6200 2717 50  0000 C CNN
+F 1 "LM339" H 6200 2626 50  0000 C CNN
+F 2 "" H 6150 2450 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 6250 2550 50  0001 C CNN
+	1    6200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM339 U?
+U 2 1 60307FC9
+P 6200 2900
+F 0 "U?" H 6200 3267 50  0000 C CNN
+F 1 "LM339" H 6200 3176 50  0000 C CNN
+F 2 "" H 6150 3000 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 6250 3100 50  0001 C CNN
+	2    6200 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 6500 2350 2    50   Input ~ 0
+sensor_1_hi
+Text HLabel 6500 2900 2    50   Input ~ 0
+sensor_1_lo
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60315D85
+P 5350 4250
+F 0 "J?" H 5430 4242 50  0000 L CNN
+F 1 "Conn_01x04" H 5430 4151 50  0000 L CNN
+F 2 "" H 5350 4250 50  0001 C CNN
+F 3 "~" H 5350 4250 50  0001 C CNN
+	1    5350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_DAC:DAC081C081CIMK U?
+U 1 1 60315D8C
+P 2100 4650
+F 0 "U?" H 2550 5050 50  0000 L CNN
+F 1 "LM339" H 2300 4950 50  0000 L CNN
+F 2 "" H 2750 4400 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 2100 4650 50  0001 C CNN
+	1    2100 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60315D92
+P 2100 4950
+F 0 "#PWR?" H 2100 4700 50  0001 C CNN
+F 1 "GND" H 2105 4777 50  0000 C CNN
+F 2 "" H 2100 4950 50  0001 C CNN
+F 3 "" H 2100 4950 50  0001 C CNN
+	1    2100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60315D98
+P 2100 4350
+F 0 "#PWR?" H 2100 4200 50  0001 C CNN
+F 1 "+5V" H 2115 4523 50  0000 C CNN
+F 2 "" H 2100 4350 50  0001 C CNN
+F 3 "" H 2100 4350 50  0001 C CNN
+	1    2100 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1700 4750
+Text GLabel 1700 4550 0    50   Input ~ 0
+scl
+Text GLabel 1700 4650 0    50   Input ~ 0
+sda
+$Comp
+L Transistor_BJT:BC846 Q?
+U 1 1 60315DA1
+P 4100 4750
+F 0 "Q?" H 4291 4796 50  0000 L CNN
+F 1 "BC846" H 4291 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4300 4675 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 4100 4750 50  0001 L CNN
+	1    4100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4150 4500 4150
+Wire Wire Line
+	4500 4150 4500 3950
+$Comp
+L power:+5V #PWR?
+U 1 1 60315DA9
+P 4500 3950
+F 0 "#PWR?" H 4500 3800 50  0001 C CNN
+F 1 "+5V" H 4515 4123 50  0000 C CNN
+F 2 "" H 4500 3950 50  0001 C CNN
+F 3 "" H 4500 3950 50  0001 C CNN
+	1    4500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4550 4200 4250
+Wire Wire Line
+	4200 4250 5150 4250
+Wire Wire Line
+	2500 4650 3200 4650
+Wire Wire Line
+	3800 4750 3900 4750
+Wire Wire Line
+	3200 4850 3000 4850
+Wire Wire Line
+	3000 4850 3000 5100
+Wire Wire Line
+	3000 5100 4200 5100
+Wire Wire Line
+	4200 5100 4200 4950
+$Comp
+L Device:R R?
+U 1 1 60315DBD
+P 4200 5400
+F 0 "R?" H 4270 5446 50  0000 L CNN
+F 1 "R" H 4270 5355 50  0000 L CNN
+F 2 "" V 4130 5400 50  0001 C CNN
+F 3 "~" H 4200 5400 50  0001 C CNN
+	1    4200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5250 4200 5100
+Connection ~ 4200 5100
+Wire Wire Line
+	4200 5550 4200 5650
+$Comp
+L power:GND #PWR?
+U 1 1 60315DC6
+P 4200 5650
+F 0 "#PWR?" H 4200 5400 50  0001 C CNN
+F 1 "GND" H 4205 5477 50  0000 C CNN
+F 2 "" H 4200 5650 50  0001 C CNN
+F 3 "" H 4200 5650 50  0001 C CNN
+	1    4200 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4450 5150 4650
+$Comp
+L power:GND #PWR?
+U 1 1 60315DCD
+P 5150 4650
+F 0 "#PWR?" H 5150 4400 50  0001 C CNN
+F 1 "GND" H 5155 4477 50  0000 C CNN
+F 2 "" H 5150 4650 50  0001 C CNN
+F 3 "" H 5150 4650 50  0001 C CNN
+	1    5150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4350 4900 4350
+Wire Wire Line
+	4900 4350 4900 5300
+$Comp
+L power:+5V #PWR?
+U 1 1 60315DD5
+P 5750 4800
+F 0 "#PWR?" H 5750 4650 50  0001 C CNN
+F 1 "+5V" H 5765 4973 50  0000 C CNN
+F 2 "" H 5750 4800 50  0001 C CNN
+F 3 "" H 5750 4800 50  0001 C CNN
+	1    5750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60315DDB
+P 5750 5100
+F 0 "R?" H 5820 5146 50  0000 L CNN
+F 1 "R" H 5820 5055 50  0000 L CNN
+F 2 "" V 5680 5100 50  0001 C CNN
+F 3 "~" H 5750 5100 50  0001 C CNN
+	1    5750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60315DE1
+P 5750 5650
+F 0 "R?" H 5820 5696 50  0000 L CNN
+F 1 "R" H 5820 5605 50  0000 L CNN
+F 2 "" V 5680 5650 50  0001 C CNN
+F 3 "~" H 5750 5650 50  0001 C CNN
+	1    5750 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60315DE7
+P 5750 6200
+F 0 "R?" H 5820 6246 50  0000 L CNN
+F 1 "R" H 5820 6155 50  0000 L CNN
+F 2 "" V 5680 6200 50  0001 C CNN
+F 3 "~" H 5750 6200 50  0001 C CNN
+	1    5750 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4950 5750 4800
+Wire Wire Line
+	5750 5250 5750 5500
+Wire Wire Line
+	5750 5800 5750 5850
+Wire Wire Line
+	5750 6350 5750 6500
+$Comp
+L power:GND #PWR?
+U 1 1 60315DF1
+P 5750 6500
+F 0 "#PWR?" H 5750 6250 50  0001 C CNN
+F 1 "GND" H 5755 6327 50  0000 C CNN
+F 2 "" H 5750 6500 50  0001 C CNN
+F 3 "" H 5750 6500 50  0001 C CNN
+	1    5750 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5500 5750 5500
+Connection ~ 5750 5500
+Wire Wire Line
+	6200 5300 4900 5300
+Connection ~ 4900 5300
+$Comp
+L Comparator:LM339 U?
+U 3 1 60315DFB
+P 6500 5400
+F 0 "U?" H 6500 5767 50  0000 C CNN
+F 1 "LM339" H 6500 5676 50  0000 C CNN
+F 2 "" H 6450 5500 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 6550 5600 50  0001 C CNN
+	3    6500 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM339 U?
+U 4 1 60315E01
+P 6500 5950
+F 0 "U?" H 6500 6317 50  0000 C CNN
+F 1 "LM339" H 6500 6226 50  0000 C CNN
+F 2 "" H 6450 6050 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 6550 6150 50  0001 C CNN
+	4    6500 5950
+	1    0    0    -1  
+$EndComp
+Text HLabel 6800 5400 2    50   Input ~ 0
+sensor_2_hi
+Text HLabel 6800 5950 2    50   Input ~ 0
+sensor_2_lo
+$Comp
+L Device:R R?
+U 1 1 60317400
+P 4900 6200
+F 0 "R?" H 4970 6246 50  0000 L CNN
+F 1 "R" H 4970 6155 50  0000 L CNN
+F 2 "" V 4830 6200 50  0001 C CNN
+F 3 "~" H 4900 6200 50  0001 C CNN
+	1    4900 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6350 4900 6500
+$Comp
+L power:GND #PWR?
+U 1 1 60319449
+P 4900 6500
+F 0 "#PWR?" H 4900 6250 50  0001 C CNN
+F 1 "GND" H 4905 6327 50  0000 C CNN
+F 2 "" H 4900 6500 50  0001 C CNN
+F 3 "" H 4900 6500 50  0001 C CNN
+	1    4900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6031AEA5
+P 4600 3150
+F 0 "R?" H 4670 3196 50  0000 L CNN
+F 1 "R" H 4670 3105 50  0000 L CNN
+F 2 "" V 4530 3150 50  0001 C CNN
+F 3 "~" H 4600 3150 50  0001 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3300 4600 3450
+$Comp
+L power:GND #PWR?
+U 1 1 6031AEAC
+P 4600 3450
+F 0 "#PWR?" H 4600 3200 50  0001 C CNN
+F 1 "GND" H 4605 3277 50  0000 C CNN
+F 2 "" H 4600 3450 50  0001 C CNN
+F 3 "" H 4600 3450 50  0001 C CNN
+	1    4600 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 3200 0    50   ~ 0
+maybe multiple\nresistor choices w/\nsolder jumpers?
+$Comp
+L Amplifier_Operational:LM358 U?
+U 2 1 6031CEE3
+P 3500 4750
+F 0 "U?" H 3500 5117 50  0000 C CNN
+F 1 "LM339" H 3500 5026 50  0000 C CNN
+F 2 "" H 3500 4750 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 3500 4750 50  0001 C CNN
+	2    3500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 6031E6FB
+P 8150 1400
+F 0 "U?" H 8108 1446 50  0000 L CNN
+F 1 "LM339" H 8108 1355 50  0000 L CNN
+F 2 "" H 8150 1400 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 8150 1400 50  0001 C CNN
+	3    8150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60322F40
+P 8050 1100
+F 0 "#PWR?" H 8050 950 50  0001 C CNN
+F 1 "+5V" H 8065 1273 50  0000 C CNN
+F 2 "" H 8050 1100 50  0001 C CNN
+F 3 "" H 8050 1100 50  0001 C CNN
+	1    8050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60323A2F
+P 8050 1700
+F 0 "#PWR?" H 8050 1450 50  0001 C CNN
+F 1 "GND" H 8055 1527 50  0000 C CNN
+F 2 "" H 8050 1700 50  0001 C CNN
+F 3 "" H 8050 1700 50  0001 C CNN
+	1    8050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM339 U?
+U 5 1 60325283
+P 8700 1400
+F 0 "U?" H 8658 1446 50  0000 L CNN
+F 1 "LM339" H 8658 1355 50  0000 L CNN
+F 2 "" H 8650 1500 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 8750 1600 50  0001 C CNN
+	5    8700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60326A0A
+P 8600 1100
+F 0 "#PWR?" H 8600 950 50  0001 C CNN
+F 1 "+5V" H 8615 1273 50  0000 C CNN
+F 2 "" H 8600 1100 50  0001 C CNN
+F 3 "" H 8600 1100 50  0001 C CNN
+	1    8600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60327344
+P 8600 1700
+F 0 "#PWR?" H 8600 1450 50  0001 C CNN
+F 1 "GND" H 8605 1527 50  0000 C CNN
+F 2 "" H 8600 1700 50  0001 C CNN
+F 3 "" H 8600 1700 50  0001 C CNN
+	1    8600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5300 4900 6050
+Wire Wire Line
+	6200 5850 5750 5850
+Connection ~ 5750 5850
+Wire Wire Line
+	5750 5850 5750 6050
+Connection ~ 4900 6050
+Wire Wire Line
+	4600 2250 4600 3000
+Wire Wire Line
+	5900 2800 5450 2800
+Connection ~ 5450 2800
+Wire Wire Line
+	5450 2800 5450 3000
+Connection ~ 4600 3000
+Wire Wire Line
+	4600 3000 5900 3000
+Wire Wire Line
+	4900 6050 6200 6050
+$EndSCHEMATC
