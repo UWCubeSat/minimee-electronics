@@ -2267,7 +2267,7 @@ F 4 "C264549" H 1700 5850 50  0001 C CNN "LCSC"
 $EndComp
 Text Notes 1550 6050 1    39   ~ 0
 both blue/white, or zener & led
-Text GLabel 10050 3450 2    50   Input ~ 0
+Text GLabel 10050 3350 2    50   Input ~ 0
 HV+
 Text GLabel 10050 3550 2    50   Input ~ 0
 HV-
@@ -2282,19 +2282,6 @@ F 3 "" H 10050 3750 50  0001 C CNN
 	1    10050 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0116
-U 1 1 6001F344
-P 10050 3350
-F 0 "#PWR0116" H 10050 3100 50  0001 C CNN
-F 1 "GND" V 10055 3222 50  0000 R CNN
-F 2 "" H 10050 3350 50  0001 C CNN
-F 3 "" H 10050 3350 50  0001 C CNN
-	1    10050 3350
-	0    -1   -1   0   
-$EndComp
-Text GLabel 10050 3650 2    50   Input ~ 0
-experiment
 $Comp
 L power:GND #PWR019
 U 1 1 5EFF3B2C
@@ -2316,5 +2303,20 @@ F 2 "Spaceduino:MOLEX_500901-0801" H 10750 1850 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 9600 1550 50  0001 C CNN
 	1    9600 1550
 	1    0    0    -1  
+$EndComp
+Text GLabel 10050 3650 2    50   Input ~ 0
+experiment
+Wire Wire Line
+	10050 3450 10600 3450
+$Comp
+L power:GND #PWR?
+U 1 1 60543884
+P 10600 3450
+F 0 "#PWR?" H 10600 3200 50  0001 C CNN
+F 1 "GND" V 10605 3322 50  0000 R CNN
+F 2 "" H 10600 3450 50  0001 C CNN
+F 3 "" H 10600 3450 50  0001 C CNN
+	1    10600 3450
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
