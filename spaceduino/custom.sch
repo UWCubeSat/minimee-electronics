@@ -146,7 +146,7 @@ U 1 1 6002623B
 P 4050 4350
 F 0 "RV1" H 3980 4304 50  0000 R CNN
 F 1 "R_POT" H 3980 4395 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_ACP_CA14-VSMD_Vertical" H 4050 4350 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296Y_Vertical" H 4050 4350 50  0001 C CNN
 F 3 "~" H 4050 4350 50  0001 C CNN
 	1    4050 4350
 	-1   0    0    1   
@@ -314,4 +314,6 @@ F 3 "" H 4600 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 3200 4600 3250
+Text GLabel 3750 3000 0    50   Input ~ 0
+a2_exp_en
 $EndSCHEMATC
