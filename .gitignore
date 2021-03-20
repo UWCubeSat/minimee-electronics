@@ -28,7 +28,8 @@ fp-info-cache
 *.xml
 *.csv
 
-/other
 *.gbr
 *.drl
 *.zip
+*.pdf
+*.step

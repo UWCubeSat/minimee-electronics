@@ -146,13 +146,13 @@ $EndComp
 $Comp
 L Device:R R16
 U 1 1 603018B3
-P 5450 3150
-F 0 "R16" H 5520 3196 50  0000 L CNN
-F 1 "10k" H 5520 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5380 3150 50  0001 C CNN
-F 3 "~" H 5450 3150 50  0001 C CNN
-F 4 "C25804" H 5450 3150 50  0001 C CNN "LCSC"
-	1    5450 3150
+P 5450 3200
+F 0 "R16" H 5520 3246 50  0000 L CNN
+F 1 "10k" H 5520 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5380 3200 50  0001 C CNN
+F 3 "~" H 5450 3200 50  0001 C CNN
+F 4 "C25804" H 5450 3200 50  0001 C CNN "LCSC"
+	1    5450 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -162,7 +162,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 2750 5450 2800
 Wire Wire Line
-	5450 3300 5450 3450
+	5450 3350 5450 3450
 $Comp
 L power:GND #PWR0139
 U 1 1 60302D41
@@ -201,15 +201,15 @@ F 4 "C42184" H 6200 2900 50  0001 C CNN "LCSC"
 	2    6200 2900
 	1    0    0    -1  
 $EndComp
-Text HLabel 6500 2350 2    50   Input ~ 0
+Text HLabel 6850 2350 2    50   Input ~ 0
 sensor_1_hi
-Text HLabel 6500 2900 2    50   Input ~ 0
+Text HLabel 6850 2900 2    50   Input ~ 0
 sensor_1_lo
 $Comp
-L Connector_Generic:Conn_01x03 J3
+L Connector_Generic:Conn_01x03 JFLUID2
 U 1 1 60315D85
 P 5350 4350
-F 0 "J3" H 5430 4342 50  0000 L CNN
+F 0 "JFLUID2" H 5430 4342 50  0000 L CNN
 F 1 "Conn_01x03" H 5430 4251 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 5350 4350 50  0001 C CNN
 F 3 "~" H 5350 4350 50  0001 C CNN
@@ -339,9 +339,9 @@ F 4 "C42184" H 6500 5950 50  0001 C CNN "LCSC"
 	4    6500 5950
 	1    0    0    -1  
 $EndComp
-Text HLabel 6800 5400 2    50   Input ~ 0
+Text HLabel 7150 5400 2    50   Input ~ 0
 sensor_2_hi
-Text HLabel 6800 5950 2    50   Input ~ 0
+Text HLabel 7150 5950 2    50   Input ~ 0
 sensor_2_lo
 $Comp
 L Device:R R20
@@ -460,12 +460,7 @@ Wire Wire Line
 	4600 2250 4600 3000
 Wire Wire Line
 	5900 2800 5450 2800
-Connection ~ 5450 2800
-Wire Wire Line
-	5450 2800 5450 3000
 Connection ~ 4600 3000
-Wire Wire Line
-	4600 3000 5900 3000
 Wire Wire Line
 	4900 6050 6200 6050
 $Comp
@@ -563,10 +558,10 @@ Text Label 5750 5500 0    50   ~ 0
 Text Label 5750 5850 0    50   ~ 0
 1_3rds
 $Comp
-L Connector_Generic:Conn_01x03 J2
+L Connector_Generic:Conn_01x03 JFLUID1
 U 1 1 602E59B9
 P 5050 1300
-F 0 "J2" H 5130 1292 50  0000 L CNN
+F 0 "JFLUID1" H 5130 1292 50  0000 L CNN
 F 1 "Conn_01x03" H 5130 1201 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 5050 1300 50  0001 C CNN
 F 3 "~" H 5050 1300 50  0001 C CNN
@@ -653,4 +648,134 @@ Connection ~ 6800 1250
 Connection ~ 7150 1250
 Wire Wire Line
 	7150 1250 6800 1250
+$Comp
+L Device:C C?
+U 1 1 605BF183
+P 5150 3200
+F 0 "C?" H 5265 3246 50  0000 L CNN
+F 1 ".1uF" H 5265 3155 50  0000 L CNN
+F 2 "" H 5188 3050 50  0001 C CNN
+F 3 "~" H 5150 3200 50  0001 C CNN
+	1    5150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3050 5450 3050
+Wire Wire Line
+	4600 3000 5900 3000
+Wire Wire Line
+	5450 3050 5450 2800
+Connection ~ 5450 3050
+Connection ~ 5450 2800
+Wire Wire Line
+	5150 3350 5450 3350
+Connection ~ 5450 3350
+Wire Wire Line
+	6500 2900 6650 2900
+Wire Wire Line
+	6500 2350 6650 2350
+$Comp
+L Device:R R?
+U 1 1 605CB52E
+P 6650 2200
+F 0 "R?" H 6720 2246 50  0000 L CNN
+F 1 "10k" H 6720 2155 50  0000 L CNN
+F 2 "" V 6580 2200 50  0001 C CNN
+F 3 "~" H 6650 2200 50  0001 C CNN
+	1    6650 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 2350
+Wire Wire Line
+	6650 2350 6850 2350
+$Comp
+L Device:R R?
+U 1 1 605CB817
+P 6650 2750
+F 0 "R?" H 6720 2796 50  0000 L CNN
+F 1 "10k" H 6720 2705 50  0000 L CNN
+F 2 "" V 6580 2750 50  0001 C CNN
+F 3 "~" H 6650 2750 50  0001 C CNN
+	1    6650 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 2900
+Wire Wire Line
+	6650 2900 6850 2900
+$Comp
+L power:+5V #PWR?
+U 1 1 605CC9CB
+P 6650 2050
+F 0 "#PWR?" H 6650 1900 50  0001 C CNN
+F 1 "+5V" H 6665 2223 50  0000 C CNN
+F 2 "" H 6650 2050 50  0001 C CNN
+F 3 "" H 6650 2050 50  0001 C CNN
+	1    6650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 605CCCAA
+P 6650 2600
+F 0 "#PWR?" H 6650 2450 50  0001 C CNN
+F 1 "+5V" H 6665 2773 50  0000 C CNN
+F 2 "" H 6650 2600 50  0001 C CNN
+F 3 "" H 6650 2600 50  0001 C CNN
+	1    6650 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5950 6950 5950
+Wire Wire Line
+	6800 5400 6950 5400
+$Comp
+L Device:R R?
+U 1 1 605D01E3
+P 6950 5250
+F 0 "R?" H 7020 5296 50  0000 L CNN
+F 1 "R" H 7020 5205 50  0000 L CNN
+F 2 "" V 6880 5250 50  0001 C CNN
+F 3 "~" H 6950 5250 50  0001 C CNN
+	1    6950 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 5400
+Wire Wire Line
+	6950 5400 7150 5400
+$Comp
+L Device:R R?
+U 1 1 605D0451
+P 6950 5800
+F 0 "R?" H 7020 5846 50  0000 L CNN
+F 1 "R" H 7020 5755 50  0000 L CNN
+F 2 "" V 6880 5800 50  0001 C CNN
+F 3 "~" H 6950 5800 50  0001 C CNN
+	1    6950 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 5950
+Wire Wire Line
+	6950 5950 7150 5950
+$Comp
+L power:+5V #PWR?
+U 1 1 605D104E
+P 6950 5650
+F 0 "#PWR?" H 6950 5500 50  0001 C CNN
+F 1 "+5V" H 6965 5823 50  0000 C CNN
+F 2 "" H 6950 5650 50  0001 C CNN
+F 3 "" H 6950 5650 50  0001 C CNN
+	1    6950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 605D1323
+P 6950 5100
+F 0 "#PWR?" H 6950 4950 50  0001 C CNN
+F 1 "+5V" H 6965 5273 50  0000 C CNN
+F 2 "" H 6950 5100 50  0001 C CNN
+F 3 "" H 6950 5100 50  0001 C CNN
+	1    6950 5100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
