@@ -168,17 +168,6 @@ F 3 "~" H 2200 1700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 2200 1700
-$Comp
-L power:+5V #PWR0116
-U 1 1 5F266259
-P 7000 900
-F 0 "#PWR0116" H 7000 750 50  0001 C CNN
-F 1 "+5V" H 7015 1073 50  0000 C CNN
-F 2 "" H 7000 900 50  0001 C CNN
-F 3 "" H 7000 900 50  0001 C CNN
-	1    7000 900 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7000 900  7000 1000
 Text Label 7050 1200 2    50   ~ 0
@@ -595,9 +584,9 @@ F 0 "Q1" H 4254 5896 50  0000 L CNN
 F 1 "BSS84" H 4254 5805 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4250 5775 50  0001 L CIN
 F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 4050 5850 50  0001 L CNN
-F 4 "C508197" H 4050 5850 50  0001 C CNN "LCSC"
+F 4 "C10487" H 4050 5850 50  0001 C CNN "LCSC"
 	1    4050 5850
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:BSS84 Q4
@@ -607,7 +596,7 @@ F 0 "Q4" H 10154 1154 50  0000 L CNN
 F 1 "BSS84" H 10154 1245 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10150 1125 50  0001 L CIN
 F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 9950 1200 50  0001 L CNN
-F 4 "C508197" H 9950 1200 50  0001 C CNN "LCSC"
+F 4 "C10487" H 9950 1200 50  0001 C CNN "LCSC"
 	1    9950 1200
 	1    0    0    1   
 $EndComp
@@ -773,7 +762,7 @@ F 0 "Q2" H 7454 1154 50  0000 L CNN
 F 1 "BSS84" H 7454 1245 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7450 1125 50  0001 L CIN
 F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 7250 1200 50  0001 L CNN
-F 4 "C508197" H 7250 1200 50  0001 C CNN "LCSC"
+F 4 "C10487" H 7250 1200 50  0001 C CNN "LCSC"
 	1    7250 1200
 	1    0    0    1   
 $EndComp
@@ -814,10 +803,10 @@ F 4 "C2128" H 8700 1650 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 JSOL3
+L Connector_Generic:Conn_01x02 JSOL2
 U 1 1 5F2698C2
 P 8200 1600
-F 0 "JSOL3" H 8118 1817 50  0000 C CNN
+F 0 "JSOL2" H 8118 1817 50  0000 C CNN
 F 1 "Conn_01x02" H 8118 1726 50  0000 C CNN
 F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 8200 1600 50  0001 C CNN
 F 3 "~" H 8200 1600 50  0001 C CNN
@@ -856,7 +845,7 @@ F 0 "Q3" H 8804 1154 50  0000 L CNN
 F 1 "BSS84" H 8804 1245 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 1125 50  0001 L CIN
 F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 8600 1200 50  0001 L CNN
-F 4 "C508197" H 8600 1200 50  0001 C CNN "LCSC"
+F 4 "C10487" H 8600 1200 50  0001 C CNN "LCSC"
 	1    8600 1200
 	1    0    0    1   
 $EndComp
@@ -873,10 +862,10 @@ F 4 "C2128" H 7350 1650 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 JSOL2
+L Connector_Generic:Conn_01x02 JSOL1
 U 1 1 5F266275
 P 6850 1600
-F 0 "JSOL2" H 6768 1817 50  0000 C CNN
+F 0 "JSOL1" H 6768 1817 50  0000 C CNN
 F 1 "Conn_01x02" H 6768 1726 50  0000 C CNN
 F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 6850 1600 50  0001 C CNN
 F 3 "~" H 6850 1600 50  0001 C CNN
@@ -1010,10 +999,10 @@ F 4 "C21190" H 850 3100 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 JSOL4
+L Connector_Generic:Conn_01x02 JSOL3
 U 1 1 5F26C725
 P 9550 1600
-F 0 "JSOL4" H 9468 1817 50  0000 C CNN
+F 0 "JSOL3" H 9468 1817 50  0000 C CNN
 F 1 "Conn_01x02" H 9468 1726 50  0000 C CNN
 F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 9550 1600 50  0001 C CNN
 F 3 "~" H 9550 1600 50  0001 C CNN
@@ -1053,6 +1042,19 @@ F 1 "GND" H 4005 4277 50  0000 C CNN
 F 2 "" H 4000 4450 50  0001 C CNN
 F 3 "" H 4000 4450 50  0001 C CNN
 	1    4000 4450
+	1    0    0    -1  
+$EndComp
+Text Notes 4200 850  0    50   ~ 0
+Don't need a pullup on p4 --\ninitial state doesn't matter as\nlong as pump driver is off
+$Comp
+L power:+12V #PWR?
+U 1 1 606B96E5
+P 7000 900
+F 0 "#PWR?" H 7000 750 50  0001 C CNN
+F 1 "+12V" H 7015 1073 50  0000 C CNN
+F 2 "" H 7000 900 50  0001 C CNN
+F 3 "" H 7000 900 50  0001 C CNN
+	1    7000 900 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
