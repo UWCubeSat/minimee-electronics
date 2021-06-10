@@ -1,0 +1,309 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0154
+U 1 1 60B0F446
+P 2800 1000
+F 0 "#PWR0154" H 2800 750 50  0001 C CNN
+F 1 "GND" H 2805 827 50  0000 C CNN
+F 2 "" H 2800 1000 50  0001 C CNN
+F 3 "" H 2800 1000 50  0001 C CNN
+	1    2800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 60B0FB65
+P 3000 900
+F 0 "J2" H 3080 942 50  0000 L CNN
+F 1 "Conn_01x03" H 3080 851 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 3000 900 50  0001 C CNN
+F 3 "~" H 3000 900 50  0001 C CNN
+	1    3000 900 
+	1    0    0    -1  
+$EndComp
+Text Label 2800 900  2    50   ~ 0
+experiment2
+Text HLabel 2800 800  0    50   Input ~ 0
+experiment
+$Comp
+L Analog_ADC:INA226 U9
+U 1 1 60B15936
+P 3450 2950
+F 0 "U9" H 3700 3650 50  0000 C CNN
+F 1 "INA226" H 3700 3550 50  0000 C CNN
+F 2 "Package_SO:VSSOP-10_3x3mm_P0.5mm" H 4250 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina226.pdf" H 3800 2850 50  0001 C CNN
+	1    3450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0155
+U 1 1 60B176E3
+P 3450 2450
+F 0 "#PWR0155" H 3450 2300 50  0001 C CNN
+F 1 "+5V" H 3465 2623 50  0000 C CNN
+F 2 "" H 3450 2450 50  0001 C CNN
+F 3 "" H 3450 2450 50  0001 C CNN
+	1    3450 2450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3850 3250
+$Comp
+L power:GND #PWR0156
+U 1 1 60B17E99
+P 3450 3450
+F 0 "#PWR0156" H 3450 3200 50  0001 C CNN
+F 1 "GND" H 3455 3277 50  0000 C CNN
+F 2 "" H 3450 3450 50  0001 C CNN
+F 3 "" H 3450 3450 50  0001 C CNN
+	1    3450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2750 4100 2750
+Wire Wire Line
+	4100 2750 4100 2450
+Wire Wire Line
+	4100 2450 3450 2450
+Connection ~ 3450 2450
+Wire Wire Line
+	3850 2650 4200 2650
+Wire Wire Line
+	4200 2650 4200 3450
+Wire Wire Line
+	4200 3450 3450 3450
+Connection ~ 3450 3450
+Text GLabel 3850 2950 2    50   Input ~ 0
+sda
+Text GLabel 3850 3050 2    50   Input ~ 0
+scl
+$Comp
+L Transistor_BJT:BC856BS Q11
+U 1 1 60B1B888
+P 1100 3350
+F 0 "Q11" H 1291 3304 50  0000 L CNN
+F 1 "BC856BS" H 1291 3395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 1300 3450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC856BS.pdf" H 1100 3350 50  0001 C CNN
+	1    1100 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0157
+U 1 1 60B1E839
+P 1000 2850
+F 0 "#PWR0157" H 1000 2700 50  0001 C CNN
+F 1 "+5V" H 1015 3023 50  0000 C CNN
+F 2 "" H 1000 2850 50  0001 C CNN
+F 3 "" H 1000 2850 50  0001 C CNN
+	1    1000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3550 1300 3550
+Wire Wire Line
+	1300 3550 1300 3350
+$Comp
+L Device:R R26
+U 1 1 60B1ED66
+P 1000 3700
+F 0 "R26" H 1070 3746 50  0000 L CNN
+F 1 "adj" H 1070 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 930 3700 50  0001 C CNN
+F 3 "~" H 1000 3700 50  0001 C CNN
+	1    1000 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 3550
+$Comp
+L Device:R R27
+U 1 1 60B1F220
+P 1000 4000
+F 0 "R27" H 1070 4046 50  0000 L CNN
+F 1 "27" H 1070 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 930 4000 50  0001 C CNN
+F 3 "~" H 1000 4000 50  0001 C CNN
+	1    1000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 60B1F90E
+P 1000 4150
+F 0 "#PWR0158" H 1000 3900 50  0001 C CNN
+F 1 "GND" H 1005 3977 50  0000 C CNN
+F 2 "" H 1000 4150 50  0001 C CNN
+F 3 "" H 1000 4150 50  0001 C CNN
+	1    1000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC856BS Q11
+U 2 1 60B200F7
+P 1500 3350
+F 0 "Q11" H 1690 3304 50  0000 L CNN
+F 1 "BC856BS" H 1690 3395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 1700 3450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC856BS.pdf" H 1500 3350 50  0001 C CNN
+	2    1500 3350
+	1    0    0    1   
+$EndComp
+Connection ~ 1300 3350
+Text Label 3050 2650 2    50   ~ 0
+experiment2
+$Comp
+L Transistor_FET:BSS84 Q10
+U 1 1 60C2FDAE
+P 1700 1900
+F 0 "Q10" H 1905 1854 50  0000 L CNN
+F 1 "BSS84" H 1905 1945 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1900 1825 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 1700 1900 50  0001 L CNN
+	1    1700 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0159
+U 1 1 60C316A5
+P 1600 1700
+F 0 "#PWR0159" H 1600 1550 50  0001 C CNN
+F 1 "+5V" H 1615 1873 50  0000 C CNN
+F 2 "" H 1600 1700 50  0001 C CNN
+F 3 "" H 1600 1700 50  0001 C CNN
+	1    1600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 60C31BF6
+P 1600 2500
+F 0 "R28" H 1670 2546 50  0000 L CNN
+F 1 "50m" H 1670 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1530 2500 50  0001 C CNN
+F 3 "~" H 1600 2500 50  0001 C CNN
+	1    1600 2500
+	1    0    0    -1  
+$EndComp
+Text HLabel 2550 2300 3    50   Input ~ 0
+expctl1
+Text HLabel 2800 2300 3    50   Input ~ 0
+expctl2
+$Comp
+L Device:D D2
+U 1 1 60C4D918
+P 2550 2150
+F 0 "D2" V 2596 2070 50  0000 R CNN
+F 1 "D" V 2505 2070 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323F" H 2550 2150 50  0001 C CNN
+F 3 "~" H 2550 2150 50  0001 C CNN
+	1    2550 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 60C4E097
+P 2800 2150
+F 0 "D3" V 2846 2070 50  0000 R CNN
+F 1 "D" V 2755 2070 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323F" H 2800 2150 50  0001 C CNN
+F 3 "~" H 2800 2150 50  0001 C CNN
+	1    2800 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 2000 2550 1900
+Wire Wire Line
+	2550 1900 2800 1900
+Wire Wire Line
+	2800 1900 2800 2000
+Connection ~ 2550 1900
+$Comp
+L Device:R R24
+U 1 1 60C4EC9C
+P 2800 1750
+F 0 "R24" H 2870 1796 50  0000 L CNN
+F 1 "10k" H 2870 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 1750 50  0001 C CNN
+F 3 "~" H 2800 1750 50  0001 C CNN
+	1    2800 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 1900
+$Comp
+L power:+5V #PWR0160
+U 1 1 60C4F414
+P 2800 1600
+F 0 "#PWR0160" H 2800 1450 50  0001 C CNN
+F 1 "+5V" H 2815 1773 50  0000 C CNN
+F 2 "" H 2800 1600 50  0001 C CNN
+F 3 "" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	1    0    0    -1  
+$EndComp
+Text Label 1600 4050 0    50   ~ 0
+experiment2
+Text Notes 3300 2200 0    50   ~ 0
+wired-AND
+Wire Wire Line
+	1900 1900 2550 1900
+$Comp
+L Device:R R29
+U 1 1 60C77100
+P 1600 3000
+F 0 "R29" H 1670 3046 50  0000 L CNN
+F 1 "10" H 1670 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1530 3000 50  0001 C CNN
+F 3 "~" H 1600 3000 50  0001 C CNN
+	1    1600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 60C77D3C
+P 1000 3000
+F 0 "R25" H 1070 3046 50  0000 L CNN
+F 1 "10" H 1070 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 930 3000 50  0001 C CNN
+F 3 "~" H 1000 3000 50  0001 C CNN
+	1    1000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3550 1600 4050
+Wire Wire Line
+	3050 3050 2100 3050
+Wire Wire Line
+	2100 3050 2100 2250
+Wire Wire Line
+	2100 2250 1600 2250
+Wire Wire Line
+	1600 2750 2000 2750
+Wire Wire Line
+	2000 2750 2000 3150
+Wire Wire Line
+	2000 3150 3050 3150
+Wire Wire Line
+	1600 2850 1600 2750
+Wire Wire Line
+	1600 2750 1600 2650
+Connection ~ 1600 2750
+Wire Wire Line
+	1600 2350 1600 2250
+Wire Wire Line
+	1600 2100 1600 2250
+Connection ~ 1600 2250
+$EndSCHEMATC

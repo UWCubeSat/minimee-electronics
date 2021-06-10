@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -211,7 +211,7 @@ U 1 1 60315D85
 P 5350 4350
 F 0 "JFLUID2" H 5430 4342 50  0000 L CNN
 F 1 "Conn_01x03" H 5430 4251 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 5350 4350 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 5350 4350 50  0001 C CNN
 F 3 "~" H 5350 4350 50  0001 C CNN
 	1    5350 4350
 	1    0    0    1   
@@ -339,10 +339,6 @@ F 4 "C42184" H 6500 5950 50  0001 C CNN "LCSC"
 	4    6500 5950
 	1    0    0    -1  
 $EndComp
-Text HLabel 7150 5400 2    50   Input ~ 0
-sensor_2_hi
-Text HLabel 7150 5950 2    50   Input ~ 0
-sensor_2_lo
 $Comp
 L Device:R R20
 U 1 1 60317400
@@ -563,7 +559,7 @@ U 1 1 602E59B9
 P 5050 1300
 F 0 "JFLUID1" H 5130 1292 50  0000 L CNN
 F 1 "Conn_01x03" H 5130 1201 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 5050 1300 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 5050 1300 50  0001 C CNN
 F 3 "~" H 5050 1300 50  0001 C CNN
 	1    5050 1300
 	1    0    0    1   
@@ -744,8 +740,6 @@ F 4 "C25804" H 6950 5250 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Connection ~ 6950 5400
-Wire Wire Line
-	6950 5400 7150 5400
 $Comp
 L Device:R R19
 U 1 1 605D0451
@@ -759,8 +753,6 @@ F 4 "C25804" H 6950 5800 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Connection ~ 6950 5950
-Wire Wire Line
-	6950 5950 7150 5950
 $Comp
 L power:+5V #PWR0144
 U 1 1 605D104E
@@ -783,4 +775,12 @@ F 3 "" H 6950 5100 50  0001 C CNN
 	1    6950 5100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6950 5400 7150 5400
+Text HLabel 7150 5400 2    50   Input ~ 0
+sensor_2_hi_expctl
+Wire Wire Line
+	6950 5950 7150 5950
+Text HLabel 7150 5950 2    50   Input ~ 0
+sensor_2_lo_expctl
 $EndSCHEMATC
